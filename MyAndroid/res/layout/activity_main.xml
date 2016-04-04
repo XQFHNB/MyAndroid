@@ -3,53 +3,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-   
     tools:context="com.example.myandroid.MainActivity" >
-    <RelativeLayout 
+
+    <RelativeLayout
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/title_dg"
-        >
-        <Button 
-            android:id="@+id/bt1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/title_dg"
-             android:layout_marginLeft="20dp"
-            android:textColor="#FFF"
-            android:text="@string/bt1"
-            />
-        <Button 
-             android:id="@+id/bt2"
+            android:text="@string/register"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/register"
             android:background="@drawable/title_dg"
-            android:textColor="#FFF"
             android:text="@string/bt2"
-            />
-         <Button 
-              android:id="@+id/bt3"
-               android:layout_width="wrap_content"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-              android:layout_marginLeft="30dp"
-               android:background="@drawable/title_dg"
-            android:textColor="#FFF"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/bt2"
+            android:background="@drawable/title_dg"
             android:text="@string/bt3"
-            />
+            android:textColor="#FFF" />
     </RelativeLayout>
-    <RelativeLayout 
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-         <ListView 
-             android:id="@+id/list_view"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             >
-             
-         </ListView>
-            
+        android:layout_below="@id/title"
+       >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
     </RelativeLayout>
-    
+
 </RelativeLayout>

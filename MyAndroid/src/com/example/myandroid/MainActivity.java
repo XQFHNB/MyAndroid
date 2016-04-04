@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,6 +33,15 @@ public class MainActivity extends Activity implements OnClickListener{
     }
 	@Override
 	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.bt2:
+			Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+			startActivity(intent);
+			break;
+
+		default:
+			break;
+		}
 		// TODO Auto-generated method stub
 		
 	}
